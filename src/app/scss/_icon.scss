@@ -1,0 +1,33 @@
+@mixin md-icon-size($size: 24px) {
+  font-size: $size;
+  height: $size;
+  width: $size;
+  line-height: $size;
+}
+
+mat-icon{
+
+  &.md-12 {
+    @include md-icon-size(12px);
+  }
+
+  &.md-14 {
+    @include md-icon-size(14px);
+  }
+
+  &.md-16 {
+    @include md-icon-size(16px);
+  }
+
+  &.md-18 {
+    @include md-icon-size(18px);
+  }
+
+  &.md-36 {
+    @include md-icon-size(36px);
+  }
+
+  &.md-48 {
+    @include md-icon-size(48px);
+  }
+}
